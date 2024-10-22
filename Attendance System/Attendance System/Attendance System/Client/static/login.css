@@ -1,107 +1,79 @@
-/* Global Styles */
+/* Styles for login page */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Updated font for a cleaner look */
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #e0e0e0; /* Light gray background for a clean look */
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220212/pngtree-composite-image-of-close-up-of-login-page-photo-photo-image_29418728.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
 }
 
-/* Login Container */
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px; /* Max width for larger screens */
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex; /* Flex container for left and right halves */
+  justify-content: center; /* Center the login container */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Full width */
 }
 
-/* Form Section */
 .form-section {
-  width: 400px;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
-  border-radius: 12px; /* Slightly more rounded corners for modern look */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
-  backdrop-filter: blur(10px); /* Blurred background effect for a polished look */
-  transition: all 0.3s ease-in-out;
+  width: 400px; /* Set a fixed width for the form */
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for elevation */
 }
 
-.form-section:hover {
-  transform: scale(1.02); /* Slight scaling effect on hover */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-/* Heading */
 h2 {
-  text-align: center;
-  color: #222; /* Slightly darker for better contrast */
-  font-size: 28px;
-  margin-bottom: 30px;
+  text-align: center; /* Centered heading */
+  color: #333; /* Darker text for contrast */
+  margin-bottom: 20px; /* Space below the heading */
 }
 
-/* Input Fields */
 input {
   width: 100%;
-  margin: 12px 0;
-  padding: 14px; /* Increased padding for better touch targets */
-  border: 1px solid rgba(200, 200, 200, 0.7); /* Softer border color */
-  border-radius: 8px; /* More rounded input fields */
-  font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent input background */
-  transition: border-color 0.3s, background-color 0.3s;
+  margin: 10px 0;
+  padding: 12px; /* Increased padding for better touch targets */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded input fields */
+  font-size: 16px; /* Slightly larger font size for readability */
+  transition: border-color 0.3s; /* Transition for border color */
 }
 
 input:focus {
-  border-color: #4CAF50; /* Green border on focus */
-  background-color: rgba(255, 255, 255, 1); /* Solid background on focus */
-  outline: none;
+  border-color: #4CAF50; /* Change border color on focus */
+  outline: none; /* Remove default outline */
 }
 
-/* Login Button */
 button {
   width: 100%;
-  padding: 14px;
-  background-color: #4CAF50;
+  padding: 12px; /* Increased padding for better touch targets */
+  background-color: #4CAF50; /* Button color */
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px; /* Rounded corners for button */
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  font-size: 16px; /* Consistent font size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
 }
 
 button:hover {
   background-color: #45a049; /* Darker shade on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow on hover for button */
+  transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-/* Footer */
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px; /* Space above the footer */
   font-size: 14px;
-  color: #888; /* Subtle gray for footer text */
+  color: #666; /* Lighter color for footer text */
 }
 
 footer a {
-  color: #4CAF50;
+  color: #4CAF50; /* Consistent button color for links */
   text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Styling */
-@media (max-width: 600px) {
-  .form-section {
-    width: 90%;
-    padding: 20px;
-  }
+  text-decoration: underline; /* Underline effect on hover */
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='attendance.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Attendance Records</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Subject Name</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in records %}
+                    <tr>
+                        <td>{{ row.Username }}</td>
+                        <td>{{ row.Subject }}</td>
+                        <td>{{ row.Date }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="logout-container">
+            <a href="{{ url_for('index') }}" class="logout-button">Logout</a>
+        </div>
+    </main>
+</body>
+</html>

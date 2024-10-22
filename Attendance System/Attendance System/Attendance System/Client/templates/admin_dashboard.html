@@ -14,16 +14,13 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Dashboard</a></li>
-                    <li><a href="#">New Registration</a></li>  
-                    <li><a href="#">Attendance</a></li>        
+                    <li><a href="#" class="active">Dashboard</a></li>  
+                    <li><a href="{{ url_for('attendance') }}">Attendance</a></li>        
                     <li><a href="#">Student Master</a></li>
                     <li><a href="#">Faculty Master</a></li>     
-                    <li><a href="#">Batch Master</a></li>
-                    <li><a href="#">Training Center</a></li>
                     <li><a href="#">Holiday</a></li>
                     <li><a href="#">Reports</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="{{ url_for('index') }}">Logout</a></li>
                 </ul>
             </nav>
         </aside>
@@ -35,7 +32,7 @@
             </header>
 
             <section class="dashboard-cards">
-                </a>
+                
                 <a href="#students" class="card blue">
                     <img src="https://cdn-icons-png.flaticon.com/512/8999/8999113.png" alt="Student Icon" class="card-icon">
                     <h2>Total Students</h2>

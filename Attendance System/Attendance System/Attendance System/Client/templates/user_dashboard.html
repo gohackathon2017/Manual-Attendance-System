@@ -13,14 +13,16 @@
   <main>
     <h2>Select a Subject:</h2>
     <div class="subjects">
-      <button>Pharmacology</button>
-      <button>Pharmaceutical Chemistry</button>
-      <button>Pharmaceutics</button>
-      <button>Pharmacokinetics</button>
-      <button>Toxicology</button>
-      <button>Biopharmaceutics</button>
-      <button>Medicinal Chemistry</button>
-    </div>
+      <ul class="subjects">
+        <button onclick="location.href='{{ url_for('enrollment', subject='Pharmacology') }}'">Pharmacology</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Pharmaceutical Chemistry') }}'">Pharmaceutical Chemistry</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Pharmaceutics') }}'">Pharmaceutics</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Pharmacokinetics') }}'">Pharmacokinetics</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Toxicology') }}'">Toxicology</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Biopharmaceutics') }}'">Biopharmaceutics</button>
+        <button onclick="location.href='{{ url_for('enrollment', subject='Medicinal Chemistry') }}'">Medicinal Chemistry</button>
+    </ul>
+    
   </main>
   <footer>
     <a href="{{ url_for('index') }}">Logout</a>
